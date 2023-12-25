@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Class Schedule</h1>
+    <div class="table-container">
+    <table id="responsive-table">
+        <tr>
+            <th>S.N.</th>
+            <th>Module Title</th>
+            <th>Module Code</th>
+            <th>Level</th>
+            <th>Period</th>
+            <th>Credit</th>
+            <th>Assessment</th>
+            <th>Percentage</th>
+            <th>Weighting</th>
+            <th>Final Due Week</th>
+            <th>Coursework Submission Deadline & Exam Date</th>
+        </tr>
+        <!-- Schedule Data -->
+        <tr>
+            <td>1</td>
+            <td><a href="#" onclick="openModal('Programming (Year)')">Programming</a></td>
+            <td>CS4001NP</td>
+            <td>4</td>
+            <td>YEAR</td>
+            <td>30</td>
+            <td>Coursework 1 (Online Submission 1200 words + Software): 30%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 12 Friday, 26 January 2024</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="#" onclick="openModal('Computer Hardware & Software Architectures (Year)')">Computer Hardware & Software Architectures</a></td>
+            <td>CT4005NP</td>
+            <td>4</td>
+            <td>YEAR</td>
+            <td>30</td>
+            <td>Written Exam (In-Class Test): 20%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 11 Sunday - Friday, 14 January - 19 January 2024</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="#" onclick="openModal('Logic and Problem Solving (Year)')">Logic and Problem Solving</a></td>
+            <td>MA4001NP</td>
+            <td>4</td>
+            <td>YEAR</td>
+            <td>30</td>
+            <td>In-Class Test 1 (Problem Set 1 - 1.15 Hours): 25%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 8 Sunday - Friday, 24 December - 29 December 2023</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="#" onclick="openModal('Introduction to Information Systems (Semester 1)')">Introduction to Information Systems</a></td>
+            <td>CC4057NP</td>
+            <td>4</td>
+            <td>SEM1</td>
+            <td>15</td>
+            <td>Test (In-Class Test with Learning Reflection): 40%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 6 Sunday - Friday, 15 December - 20 December 2023</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="#" onclick="openModal('Fundamentals of Computing (Semester 2)')">Fundamentals of Computing</a></td>
+            <td>CS4051NP</td>
+            <td>4</td>
+            <td>SEM2</td>
+            <td>15</td>
+            <td>Coursework (Numerical Data Program with Report): 60%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 27 Tuesday, 7 May 2024</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="#" onclick="openModal('Introduction to Information Systems (Semester 1)')">Introduction to Information Systems</a></td>
+            <td>CC4058NP</td>
+            <td>4</td>
+            <td>SEM1</td>
+            <td>15</td>
+            <td>Test (In-Class Test with Learning Reflection): 40%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 6 Sunday - Friday, 10 December - 15 December 2023</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="#" onclick="openModal('Fundamentals of Computing (Semester 2)')">Fundamentals of Computing</a></td>
+            <td>CC4059NP</td>
+            <td>4</td>
+            <td>SEM2</td>
+            <td>15</td>
+            <td>Coursework (Numerical Data Program with Report): 60%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Week 27 Tuesday, 7 May 2024</td>
+        </tr>
+        <!-- Add more rows for other modules -->
+    </table>
+</div>
+
+    <!-- Modal for Module Details -->
+    <div id="moduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="moduleDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
